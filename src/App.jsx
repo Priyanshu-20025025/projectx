@@ -2,6 +2,8 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import { Button } from "./components/ui/button";
+import { ConfettiFireworks } from './pages/ConfettiFireworks';
 
 
 function App() {
@@ -9,8 +11,10 @@ function App() {
 
   return (
     <>
-<div className='text-2xl'>hello world!</div>
-    </>
+<div className='text-4xl'>hello world!</div>
+
+<ConfettiFireworks />
+</>
   )
 }
 

@@ -1,0 +1,35 @@
+// {
+//   "compilerOptions": {
+//     "target": "es6",
+//     "module": "esnext",
+//     "strict": true,
+//     "jsx": "react",
+//     "esModuleInterop": true,
+//     "skipLibCheck": true,
+//     "baseUrl": ".", // Ensure this is set
+//     "paths": {
+//       "@/*": ["src/*"] // Ensure this matches your structure
+//     }
+//   },
+//   "include": ["src/**/*"],
+//   "references": []
+// }
+
+
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "esnext",
+    "strict": true,
+    "jsx": "react",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "baseUrl": ".",  // Ensure this is the root of your project
+    "paths": {
+      "@/*": ["src/*"]  // Ensure "src/*" is the correct relative path to your source files
+    },
+    "moduleResolution": "node"  // Add this for resolving modules like Node.js
+  },
+  "include": ["src/**/*"],  // This should include all files in src
+  "references": []
+}
