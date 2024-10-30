@@ -1,21 +1,19 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import { Button } from "./components/ui/button";
-import { ConfettiFireworks } from './pages/ConfettiFireworks';
+// In App.jsx
+import './App.css';
+import { HeroHighlightDemo } from './components/ui/HeroHighlightDemo';
+import BusinessSection from './pages/BusinessSection';
 
+// import MenuBar from './components/ui/MenuBar/MenuBar';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-<div className='text-4xl'>hello world!</div>
-
-<ConfettiFireworks />
-</>
-  )
+    <div className="w-full h-full">
+      <HeroHighlightDemo />
+      <BusinessSection />
+  
+      {/* <MenuBar /> */}
+    </div>
+  );
 }
 
-export default App
+export default App;
